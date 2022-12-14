@@ -10,10 +10,7 @@
         {
             return a;
         }
-
-
     }
-
     static void Main(string[] args)
     {
         string reponse;
