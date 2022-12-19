@@ -2,6 +2,7 @@
 {
     public static bool EstPremier(int nb)
     {
+
         if (nb <= 3)
         {
             return true;
