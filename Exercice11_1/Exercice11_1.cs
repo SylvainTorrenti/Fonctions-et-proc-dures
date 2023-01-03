@@ -1,4 +1,5 @@
-﻿string Inverse(string String)
+﻿//Fonction qui inverse la chaine de caractère  entrée en paramétre
+string Inverse(string String)
 {
     string Gnirts = "";
     for (int i = String.Length - 1; i > -1; i--)
@@ -9,6 +10,7 @@
     return Gnirts;
 
 }
+//Fonction qui verifie si la chaine de caractère  entrée en paramétre est un palindrome ou non
 bool EstPalindrome(string String)
 {
     if (Inverse(String) == String)

@@ -1,4 +1,5 @@
-﻿void AffichagePremier(int Nombre)
+﻿//Méthode qui affiche tout les nombre premier inferieur au nombre entré en paramétre 
+void AffichagePremier(int Nombre)
 {
     for (int i = 1; i <= Nombre; i++)
     {
@@ -8,6 +9,7 @@
         }
     }
 }
+//Fonction qui indique si le nombre entré en paramétre est pair ou non
 bool EstPremier(int Nombre)
 {
 

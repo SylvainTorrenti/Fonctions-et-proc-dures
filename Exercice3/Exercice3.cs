@@ -3,7 +3,8 @@ EstPair(5);
 EstPair(6);
 EstPair(7);
 EstPair(8);
-static bool EstPair(int Entier)
+//Fonction booléenne qui indique si l'entier entré en paramétre est pair ou non
+bool EstPair(int Entier)
 {
     if (Entier % 2 == 0)
     {

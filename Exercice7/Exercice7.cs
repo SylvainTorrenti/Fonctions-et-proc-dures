@@ -1,4 +1,5 @@
-﻿int[] SommeTableau(int[] Tab1, int[] Tab2)
+﻿//Fonction qui calcul la somme de deux tableau entré en paramétre
+int[] SommeTableau(int[] Tab1, int[] Tab2)
 {
     int[] c = new int[Tab1.Length];
     for (int i = 0; i < Tab1.Length; i++)
@@ -7,6 +8,7 @@
     }
     return c;
 }
+//Methode qui affiche un tableau entré en paramétre
 void AfficherTableau(int[] Tab)
 {
     Console.Write("[ ");

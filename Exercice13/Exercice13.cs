@@ -1,4 +1,5 @@
-﻿static string CodeCesar(string String, int Cle)
+﻿//Fonction qui permet d'appliquer le code Cesar à une chaine de caractére en fonction de la clé entrée en paramétre
+string CodeCesar(string String, int Cle)
 {
     string Resultat = "";
     int Temp;

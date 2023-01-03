@@ -1,4 +1,5 @@
-﻿string Compression(string String)
+﻿//Fonction qui compresse la chaine de caractère  entré en paramétre
+string Compression(string String)
 {
     int Resultat = 0;
     string StringComp = "";

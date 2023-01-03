@@ -1,8 +1,10 @@
-﻿double Carre(double Coordonee)
+﻿//fonction qui retourne la carré du double entré en paramétre
+double Carre(double Coordonee)
 {
     return Coordonee * Coordonee;
 }
-
+//fonction qui calcule et retourne la distance entre deux points
+//Les coordonnées des points sont misent en paramétre
 double Distance(double x1, double y1, double x2, double y2)
 {
     return Math.Sqrt(Carre(y2 - y1) + Carre(x2 - x1));

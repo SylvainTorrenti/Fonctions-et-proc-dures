@@ -1,4 +1,5 @@
-﻿void PermutationString(string String1, string String2)
+﻿//Méthode qui interverti les chaines de caractère  entrées en paramétre
+void PermutationString(string String1, string String2)
 {
     string Temps2;
     string Temps;

@@ -1,4 +1,5 @@
-﻿bool EstPremier(int Nombre)
+﻿//Fonction qui indique si le nombre entré en paramétre est pair ou non
+bool EstPremier(int Nombre)
 {
 
     if (Nombre <= 3)
