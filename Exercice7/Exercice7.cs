@@ -1,9 +1,9 @@
-﻿int[] SommeTableau(int[] a, int[] b)
+﻿int[] SommeTableau(int[] Tab1, int[] Tab2)
 {
-    int[] c = new int[a.Length];
-    for (int i = 0; i < a.Length; i++)
+    int[] c = new int[Tab1.Length];
+    for (int i = 0; i < Tab1.Length; i++)
     {
-        c[i] = a[i] + b[i];
+        c[i] = Tab1[i] + Tab2[i];
     }
     return c;
 }

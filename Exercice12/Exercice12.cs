@@ -1,43 +1,43 @@
-﻿string Compression(string a)
+﻿string Compression(string String)
 {
     int Resultat = 0;
-    string Comp = "";
-    for (int i = 0; i < a.Length; i++)
+    string StringComp = "";
+    for (int i = 0; i < String.Length; i++)
     {
-        if (i == a.Length - 1)
+        if (i == String.Length - 1)
         {
-            if (a[i] == a[i - 1])
+            if (String[i] == String[i - 1])
             {
                 Resultat++;
             }
-            else if (a[i] != a[i - 1])
+            else if (String[i] != String[i - 1])
             {
                 Resultat++;
             }
             if (Resultat == 1)
             {
-                Comp += $"{a[i]}";
+                StringComp += $"{String[i]}";
             }
             else
             {
-                Comp += $"{Resultat}{a[i]}";
+                StringComp += $"{Resultat}{String[i]}";
             }
         }
 
-        else if (a[i] == a[i + 1])
+        else if (String[i] == String[i + 1])
         {
             Resultat++;
         }
-        else if (a[i] != a[i + 1] || a[i] != a[i - 1])
+        else if (String[i] != String[i + 1] || String[i] != String[i - 1])
         {
             Resultat++;
             if (Resultat == 1)
             {
-                Comp += $"{a[i]}";
+                StringComp += $"{String[i]}";
             }
             else
             {
-                Comp += $"{Resultat}{a[i]}";
+                StringComp += $"{Resultat}{String[i]}";
             }
 
             Resultat = 0;
@@ -45,7 +45,7 @@
 
     }
 
-    return Comp;
+    return StringComp;
 
 }
 

@@ -1,6 +1,6 @@
-﻿void AffichagePremier(int nb)
+﻿void AffichagePremier(int Nombre)
 {
-    for (int i = 1; i <= nb; i++)
+    for (int i = 1; i <= Nombre; i++)
     {
         if (EstPremier(i))
         {
@@ -8,19 +8,19 @@
         }
     }
 }
-bool EstPremier(int nb)
+bool EstPremier(int Nombre)
 {
 
-    if (nb <= 3)
+    if (Nombre <= 3)
     {
         return true;
     }
     else
     {
-        int SqrtEntier = (int)Math.Sqrt(nb);
+        int SqrtEntier = (int)Math.Sqrt(Nombre);
         for (int i = 2; i <= SqrtEntier; i++)
         {
-            if (nb % i == 0)
+            if (Nombre % i == 0)
                 return false;
         }
         return true;

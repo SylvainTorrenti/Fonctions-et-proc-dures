@@ -1,12 +1,12 @@
-﻿string Inverse(string a)
+﻿string Inverse(string String)
 {
-    string b = "";
-    for (int i = a.Length - 1; i > -1; i--)
+    string Gnirts = "";
+    for (int i = String.Length - 1; i > -1; i--)
     {
 
-        b += a[i];
+        Gnirts += String[i];
     }
-    return b;
+    return Gnirts;
 
 }
 

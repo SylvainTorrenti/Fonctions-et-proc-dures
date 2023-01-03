@@ -1,25 +1,25 @@
 ﻿
-string Reponse(string a)
+string Reponse(string Reponse)
 {
-    if (a != "Oui" && a != "Non")
+    if (Reponse != "Oui" && Reponse != "Non")
     {
         return "Répondez par Oui ou Non";
     }
     else
     {
-        return a;
+        return Reponse;
     }
 }
 
-string reponse;
+string Reponse1;
 Console.WriteLine("Etes vous marriez?");
-reponse = Console.ReadLine();
-Console.WriteLine(Reponse(reponse));
-while (reponse != "Oui" && reponse != "Non")
+Reponse1 = Console.ReadLine();
+Console.WriteLine(Reponse(Reponse1));
+while (Reponse1 != "Oui" && Reponse1 != "Non")
 {
     Console.WriteLine("Etes vous marriez?");
-    reponse = Console.ReadLine();
-    Console.WriteLine(Reponse(reponse));
+    Reponse1 = Console.ReadLine();
+    Console.WriteLine(Reponse(Reponse1));
 }
 
 

@@ -1,5 +1,4 @@
-﻿
-double Carre(double Coordonee)
+﻿double Carre(double Coordonee)
 {
     return Coordonee * Coordonee;
 }

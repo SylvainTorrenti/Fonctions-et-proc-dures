@@ -1,10 +1,10 @@
-﻿int Factorielle(int a)
+﻿int Factorielle(int Nombre)
 {
     int Somme = 1;
-    while (a > 0)
+    while (Nombre > 0)
     {
-        Somme = a * Somme;
-        a = a - 1;
+        Somme = Nombre * Somme;
+        Nombre = Nombre - 1;
     }
     return Somme;
 }
