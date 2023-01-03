@@ -14,7 +14,7 @@
     }
     static void Main(string[] args)
     {
-        Console.WriteLine(Inverse("bonjour"));
+        Console.WriteLine(Inverse("Nathalie"));
         Console.WriteLine("");
         Console.WriteLine(Inverse("WINDOWS"));
     }

@@ -43,7 +43,7 @@
 
     static void Main(string[] args)
     {
-        Console.WriteLine(CodeCesar("Bonjour je suis Sylvain", -3));
+        Console.WriteLine(CodeCesar("Bonjour je suis Sylvain", 6));
     }
 
 }

@@ -54,7 +54,7 @@
 
     static void Main(string[] args)
     {
-        Console.WriteLine(Compression("ABC"));
+        Console.WriteLine(Compression("aa"));
         Console.WriteLine(Compression("AAAaa"));
         Console.WriteLine(Compression("AAAAABBBCC"));
     }

@@ -15,6 +15,7 @@
 
     static void Main(string[] args)
     {
-        PermutationString("Hello", "Good-bye");
+        PermutationString("Bien", "Mal");
+        PermutationString("coucou", "Salut");
     }
 }
