@@ -1,18 +1,12 @@
-﻿class exercice14
+﻿int Factorielle(int a)
 {
-
-    static int Factorielle(int a)
+    int Somme = 1;
+    while (a > 0)
     {
-        int Somme = 1; 
-        while (a > 0) 
-        {
-            Somme = a * Somme;
-            a = a - 1;
-        }
-        return Somme;
+        Somme = a * Somme;
+        a = a - 1;
     }
-    static void Main(string[] args)
-    {
-        Console.WriteLine(Factorielle(5));
-    }
+    return Somme;
 }
+
+Console.WriteLine(Factorielle(5));

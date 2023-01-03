@@ -1,23 +1,18 @@
-﻿class Program
+﻿string Inverse(string a)
 {
-
-    static string Inverse(string a)
+    string b = "";
+    for (int i = a.Length - 1; i > -1; i--)
     {
-        string b = "";
-        for (int i = a.Length - 1; i > -1; i--)
-        {
 
-            b += a[i];
-        }
-        return b;
-
+        b += a[i];
     }
-    static void Main(string[] args)
-    {
-        Console.WriteLine(Inverse("Nathalie"));
-        Console.WriteLine("");
-        Console.WriteLine(Inverse("WINDOWS"));
-    }
-
+    return b;
 
 }
+
+Console.WriteLine(Inverse("Nathalie"));
+Console.WriteLine("");
+Console.WriteLine(Inverse("WINDOWS"));
+
+
+

@@ -1,34 +1,26 @@
-﻿class Exercice11_1
+﻿string Inverse(string a)
 {
-
-    static string Inverse(string a)
+    string b = "";
+    for (int i = a.Length - 1; i > -1; i--)
     {
-        string b = "";
-        for (int i = a.Length - 1; i > -1; i--)
-        {
 
-            b += a[i];
-        }
-        return b ; 
+        b += a[i];
+    }
+    return b;
 
-    }
-    static bool EstPalindrome(string a)
-    {
-        if (Inverse(a) == a)
-        {
-            return true;
-        }
-        else
-            return false;
-    }
-    static void Main(string[] args)
-    {
-        Console.WriteLine(EstPalindrome("kayak")); 
-        Console.WriteLine("");
-        Console.WriteLine(EstPalindrome("WINDOWS"));
-        Console.WriteLine("");
-        Console.WriteLine(EstPalindrome("maoam"));
-
-    }
-    
 }
+bool EstPalindrome(string a)
+{
+    if (Inverse(a) == a)
+    {
+        return true;
+    }
+    else
+        return false;
+}
+
+Console.WriteLine(EstPalindrome("kayak"));
+Console.WriteLine("");
+Console.WriteLine(EstPalindrome("WINDOWS"));
+Console.WriteLine("");
+Console.WriteLine(EstPalindrome("maoam"));

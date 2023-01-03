@@ -1,58 +1,43 @@
-﻿class Program
+﻿bool EstPremier(int nb)
 {
-    public static void AffichagePremier(int nb)
+
+    if (nb <= 3)
     {
-        for (int i = 1; i <= nb; i++)
+        return true;
+    }
+    else
+    {
+        int SqrtEntier = (int)Math.Sqrt(nb);
+        for (int i = 2; i <= SqrtEntier; i++)
         {
-            if (EstPremier(i))
-            {
-                Console.WriteLine(i);
-            }
+            if (nb % i == 0)
+                return false;
+        }
+        return true;
+    }
+}
+void TableauPremier(int nb)
+{
+    int[] TabPremier = new int[nb];
+    for (int i = 1; i <= nb; i++)
+    {
+        if (EstPremier(i))
+        {
+            TabPremier[i] = i;
         }
     }
-    public static bool EstPremier(int nb)
+    for (int i = 0; i < TabPremier.Length; i++)
     {
 
-        if (nb <= 3)
+        if (TabPremier[i] == 0)
         {
-            return true;
+            Console.Write("");
         }
         else
         {
-            int SqrtEntier = (int)Math.Sqrt(nb);
-            for (int i = 2; i <= SqrtEntier; i++)
-            {
-                if (nb % i == 0)
-                    return false;
-            }
-            return true;
+            Console.Write(TabPremier[i] + " ");
         }
-    }
-    public static void TableauPremier(int nb)
-    {
-        int[] TabPremier = new int[nb];
-        for (int i = 1; i <= nb; i++)
-        {
-            if (EstPremier(i))
-            {
-                TabPremier[i] = i;
-            }
-        }
-        for (int i = 0; i < TabPremier.Length; i++)
-        {
-            
-            if (TabPremier[i] == 0)
-            {
-                Console.Write("");
-            }
-            else
-            {
-                Console.Write(TabPremier[i] + " ");
-            }
-        }
-    }
-    static void Main(string[] args)
-    {
-        TableauPremier(100);
     }
 }
+
+TableauPremier(100);

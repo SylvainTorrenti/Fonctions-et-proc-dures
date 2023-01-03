@@ -1,28 +1,25 @@
-﻿class Program
+﻿
+string Reponse(string a)
 {
-    static public string Reponse(string a)
+    if (a != "Oui" && a != "Non")
     {
-        if (a != "Oui" && a != "Non")
-        {
-            return "Répondez par Oui ou Non";
-        }
-        else
-        {
-            return a;
-        }
+        return "Répondez par Oui ou Non";
     }
-    static void Main(string[] args)
+    else
     {
-        string reponse;
-        Console.WriteLine("Etes vous marriez?");
-        reponse = Console.ReadLine();
-        Console.WriteLine(Reponse(reponse));
-        while (reponse != "Oui" && reponse != "Non")
-        {
-            Console.WriteLine("Etes vous marriez?");
-            reponse = Console.ReadLine();
-            Console.WriteLine(Reponse(reponse));
-        }
-
+        return a;
     }
 }
+
+string reponse;
+Console.WriteLine("Etes vous marriez?");
+reponse = Console.ReadLine();
+Console.WriteLine(Reponse(reponse));
+while (reponse != "Oui" && reponse != "Non")
+{
+    Console.WriteLine("Etes vous marriez?");
+    reponse = Console.ReadLine();
+    Console.WriteLine(Reponse(reponse));
+}
+
+

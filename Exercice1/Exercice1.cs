@@ -1,13 +1,7 @@
-﻿class Program
+﻿
+Bonjour("Sylvain");
+
+void Bonjour(string name)
 {
-    static void Main(string[] args)
-    {
-        Bonjour("Sylvain");
-
-    }
-
-    static void Bonjour(string name)
-    {
-        Console.WriteLine("Bonjour " + name);
-    }
+    Console.WriteLine($"Bonjour {name}");
 }
