@@ -1,5 +1,5 @@
 ﻿//Méthode qui interverti les chaines de caractère  entrées en paramétre
-void PermutationString(string String1, string String2)
+string PermutationString(string String1, string String2)
 {
     string Temps2;
     string Temps;
@@ -7,11 +7,10 @@ void PermutationString(string String1, string String2)
     Temps2 = String2;
     String1 = String2;
     String2 = Temps;
-    Console.WriteLine($"La nouvelle valeur de { Temps} est {String1}");
-    Console.WriteLine($"La nouvelle valeur de  { Temps2}  est { String2}");
+    return $"Les chaines permutées sont : {String1} et {String2}";;
 
 }
+Console.WriteLine("Les chaines d'origine sont : Bien et Mal");
+Console.WriteLine(PermutationString("Bien", "Mal")); 
 
-PermutationString("Bien", "Mal");
-PermutationString("coucou", "Salut");
 

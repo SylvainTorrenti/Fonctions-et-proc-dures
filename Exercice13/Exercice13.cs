@@ -31,5 +31,5 @@ string CodeCesar(string String, int Cle)
     return Resultat;
 }
 
-
-Console.WriteLine(CodeCesar("Bonjour je suis Sylvain", 6));
+Console.WriteLine("Le texte d'origine est : Bonjour je suis Sylvain");
+Console.WriteLine($"Le texte transformé est : {CodeCesar("Bonjour je suis Sylvain", 6)}");

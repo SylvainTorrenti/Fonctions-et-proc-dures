@@ -1,25 +1,23 @@
-﻿//class Program
-//{
-//    static void ConvertirEnBinaire(int a)
-//    {
-//        string Binaire = Convert.ToString(a, 2);
-//        Console.WriteLine(Binaire);
-//    }
-//    static void ConvertirEnDecimal(string a)
-//    {
-//        a = Convert.ToInt32(string a)  ;
-//        Console.WriteLine(Decimal);
-//    }
+﻿string ConvertirEnBinaire(int Nombre)
+{
+    return Convert.ToString(Nombre, 2);
 
-//    static void Main(string[] args)
-//    {
-//        ConvertirEnBinaire(2);
-//        ConvertirEnBinaire(8);
-//        ConvertirEnBinaire(9);
-//        ConvertirEnBinaire(36);
-//        ConvertirEnDecimal("10");
-//        ConvertirEnDecimal("1000");
-//        ConvertirEnDecimal("1001");
-//        ConvertirEnDecimal("100100");
-//    }
-//}
+}
+int ConvertirEnDecimal(int Nombre)
+{
+
+    return Convert.ToInt32(Nombre.ToString(), 2);
+    //return Decimal;
+
+}
+
+
+Console.WriteLine(ConvertirEnBinaire(2));
+Console.WriteLine(ConvertirEnBinaire(8));
+Console.WriteLine(ConvertirEnBinaire(9));
+Console.WriteLine(ConvertirEnBinaire(36));
+Console.WriteLine(ConvertirEnDecimal(10));
+Console.WriteLine(ConvertirEnDecimal(1000));
+Console.WriteLine(ConvertirEnDecimal(1001));
+Console.WriteLine(ConvertirEnDecimal(100100));
+

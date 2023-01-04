@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice08_2", "Exercice8_2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice09", "Exercice9\Exercice09.csproj", "{28AEF9F7-6665-48F1-9695-B406CA007349}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice10", "Exercice10\Exercice10.csproj", "{B6E366B3-69B9-4662-BAFA-D74A70BBF494}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice10(a revoir)", "Exercice10\Exercice10(a revoir).csproj", "{B6E366B3-69B9-4662-BAFA-D74A70BBF494}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice11", "Exercice11\Exercice11.csproj", "{815B62B3-2A72-4626-B077-74E6E205F30D}"
 EndProject

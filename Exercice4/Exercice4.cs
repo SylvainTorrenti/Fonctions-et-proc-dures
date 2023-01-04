@@ -1,29 +1,28 @@
 ﻿int[] NoteDonnee = { 17, 18, 19, 20, 14, 16, 15, 12, 13, 14, 11, 8, };
 for (int i = 0; i < NoteDonnee.Length; i++) //Parcours le tableau
 {
-    Mention(NoteDonnee[i]);
+    Console.WriteLine(Mention(NoteDonnee[i]));
 }
 //méthode qui affiche la mention en fonction de la note entrée en paramétre
-void Mention(int Note)
+string Mention(int Note)
 {
     if (Note >= 10 && Note < 12)
     {
-        Console.WriteLine("La mention est Passable");
+        return "La mention est Passable";
     }
     if (Note >= 12 && Note < 14)
     {
-        Console.WriteLine("La mention est Assez Bien");
+        return "La mention est Assez Bien";
     }
     if (Note >= 14 && Note < 16)
     {
-        Console.WriteLine("La mention est Bien");
+        return "La mention est Bien";
     }
-    if (Note > 16)
+    if (Note >= 16)
     {
-        Console.WriteLine("La mention est Très bien");
+        return "La mention est Très bien";
     }
-    else if (Note < 10)
-    {
-        Console.WriteLine("C'est un Echec");
-    }
+
+    return "C'est un Echec";
+
 }
